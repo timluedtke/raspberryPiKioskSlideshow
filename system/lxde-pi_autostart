@@ -1,0 +1,10 @@
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+@xscreensaver -no-splash
+#@point-rpi
+@xset s off
+@xset -dpms
+@xset s noblank
+@unclutter -display :0 -noevents -grab
+@sed -i 's/"exited_cleanly": false/"exited_cleanly": true/' ~/.config/chromium/Default/Preferences
+@chromium-browser --disable-restore-session-state --noerrdialogs --kiosk https://blank.org/

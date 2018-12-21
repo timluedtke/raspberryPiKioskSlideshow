@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript">
+    function updateTime() {
+      var date = new Date();
+      var stunden = (date.getHours() < 10 ? '0' : '') + date.getHours();
+      var minuten = (date.getMinutes() < 10 ? '0' : '') + date.getMinutes();
+      var sekunden = (date.getSeconds() < 10 ? '0' : '') + date.getSeconds();
+      var tag = date.getDate();
+      var monatDesJahres = date.getMonth();
+      var jahr = date.getFullYear();
+      var tagInWoche = date.getDay();
+      var wochentag = ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"];
+      var monat = ["Januar", "Februar", "M&auml;rz", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"];
+
+      var uhrzeit = stunden + ":" + minuten + ":" + sekunden;
+      var datum = wochentag[tagInWoche] + ", " + tag + ". " + monat[monatDesJahres] + " " + jahr;
+
+      document.getElementById('time').innerHTML = uhrzeit;
+      document.getElementById('date').innerHTML = datum;
+      setTimeout(updateTime, 1000);
+    }
+
+    window.addEventListener("load", updateTime);
+  </script>
+</head>
+<body style="background-color: black">
+<div id="time" style="text-align: center;font-size: 10em;font-family: Arial; color: white;"></div>
+<div id="date" style="text-align: center;font-size: 3em;font-family: Arial; color: white;"></div>
+</body>
+</html>

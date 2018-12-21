@@ -1,0 +1,22 @@
+#######################################################################################################
+# Configuration file for RaspberryPi Kiosk Slideshow
+#   Project author: Tim Luedtke
+#
+# Mit der folgenden Zeile kann die Wechselzeit zwischen den Übergängen (in Sekunden) festgelegt werden:
+# einstellung-wechselzeit-sekunden=7
+#
+# Folgend können Dateien oder URLs festgelegt werden, welche aufgerufen werden sollen:
+#   Format: Dateiname oder vollständige URL (inkl. http/https)
+#######################################################################################################
+1.jpg
+2.jpg
+3.jpg
+5.jpg
+6.jpg
+7.jpg
+9.jpg
+10.jpg
+11.jpg
+12.jpg
+13.jpg
+14.jpg
