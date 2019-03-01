@@ -2,11 +2,11 @@
 # Configuration file for RaspberryPi Kiosk Slideshow
 #   Project author: Tim Luedtke
 #
-# Mit der folgenden Zeile kann die Wechselzeit zwischen den Übergängen (in Sekunden) festgelegt werden:
-# einstellung-wechselzeit-sekunden=7
+# With the following line you can set the transition delay between your slides:
+# setting-transition-delay=7
 #
-# Folgend können Dateien oder URLs festgelegt werden, welche aufgerufen werden sollen:
-#   Format: Dateiname oder vollständige URL (inkl. http/https)
+# You can either insert filenames (one in each line) or URL of websites:
+#   Format: Filename or complete URL (incl. http/https)
 #######################################################################################################
 1.jpg
 2.jpg
@@ -15,6 +15,7 @@
 6.jpg
 7.jpg
 9.jpg
+https://timluedtke.de
 10.jpg
 11.jpg
 12.jpg

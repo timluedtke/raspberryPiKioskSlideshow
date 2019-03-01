@@ -50,7 +50,7 @@ echo "<!-- " . $version . " -->\r\n";
           }
           echo "urls[" . $outputSize . "] = '" . $enhancedUrl . "';\r\n";
           $outputSize++;
-      } else if (substr($steuerungsinfos[$i], 0, 35) === "# einstellung-wechselzeit-sekunden=") {
+      } else if (substr($steuerungsinfos[$i], 0, 35) === "# setting-transition-delay=") {
           $delayvalue = substr($steuerungsinfos[$i], 35);
           $delay = $delayvalue / 2 * 1000;
       }
