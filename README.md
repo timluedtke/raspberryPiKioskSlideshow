@@ -17,7 +17,7 @@ mv -r ./system/lxde-pi_autostart /home/pi/.config/lxsession/LXDE-pi/autostart
 
 ## Installation - step by step
 ### Basic Setup
-For basic RaspberryPi setup you can use most of the available guides or this on:
+For basic RaspberryPi setup you can use most of the available guides, for example this one:
 https://gist.github.com/blackjid/dfde6bedef148253f987
 
 ### HDMI Mode
@@ -45,7 +45,7 @@ mv -r ./system/lxde-pi_autostart /home/pi/.config/lxsession/LXDE-pi/autostart
 ```
 
 ### Autostart Slideshow on bootup
-To autostart this slideshow directly after bootup there is a precomiled file in this repo: **/system/lxde-pi_autostart**
+To autostart this slideshow directly after bootup there is a ready-to-go file in this repo: ./system/**lxde-pi_autostart**
 
 
 With the following command you can move that file to a special directory where raspberryPi automatically executes it on bootup:
@@ -58,15 +58,15 @@ Based on this Guides:
 - https://gist.github.com/blackjid/dfde6bedef148253f987
 
 ## Prepare your Slideshow
-Everything slideshow related happens in the /files folder.
-- Put some images to /files folder. Ideally with the same resultion of the screen (eg. 1920x1080px). 
+Everything slideshow-related happens in the ./files folder.
+- Put some images into the /files folder. Ideally with the same resultion of the screen (eg. 1920x1080px). 
 - Edit the slideshow.txt
     - Every line starting with # is a comment line
-    - Every line shall be either the filename (without path) OR a URL (eg: image.jpg OR https://timluedtke.de)
-    - if you want you can set the transition delay in the comment-line: # setting-transition-delay=
+    - Every other line shall be either the filename (without path) OR a URL (eg: image.jpg OR https://timluedtke.de)
+    - if you want you can set the transition delay in the comment-line to a different value (seconds): # setting-transition-delay=
     
 ## You are done now :)
-If everything is set up correctly, the RaspberryPi shall start chromium in fullscreen directly after bootup and after some seconds of showing the date&time (datetimenow.html) your slideshow shall start and loop.
+If everything is set up correctly, the RaspberryPi shall start chromium in fullscreen directly after bootup and after some seconds of showing the date&time (datetimenow.html) your slideshow shall start and loop endlessly. You're welcome.
 
 ## Feedback
 If you liked what we've done together feel free to give feedback (Gitlab Issues) or send me an photo of your RaspberryPiKiosk Setup. I would love that :) eMail: mail %aht% timluedtke %dot% de
