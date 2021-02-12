@@ -5,9 +5,7 @@ Use a RaspberryPi to show a full-screen Slideshow (Kiosk-mode)
 ## Installation TL;DR
 Use Raspbian and chromium, don't use midori
 ```bash
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get dist-upgrade
+sudo apt-get update && sudo apt-get dist-upgrade
 sudo apt-get install git vim ntpdate chromium-browser apache2 php libapache2-mod-php -y
 
 git clone git@github.com:timluedtke/raspberryPiKioskSlideshow.git
